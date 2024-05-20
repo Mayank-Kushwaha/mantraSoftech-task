@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container img {
+    width: 100%;
+    display: flex;
+}
+
+.text-overlay {
+    color: black;
+    font-family: sans-serif;
+    opacity: 70%;
+    font-weight: 200;
+    font-size: 3.5rem;
+    z-index: 100;
+}
+
+.text-overlay p {
+    position: absolute;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.corpus-img {
+    margin-left: 14rem;
+}
+
+.btn-lh,
+.btn-sme,
+.btn-tn,
+.btn-cc,
+.btn-ht,
+.btn-tc,
+.btn-ft,
+.btn-edu {
+    position: absolute;
+    transform: translateX(-50%);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.btn-lh {
+    top: 10%;
+    left: 50%;
+}
+
+.btn-sme {
+    top: 21%;
+    left: 38%;
+}
+
+.btn-tn {
+    top: 32%;
+    left: 32%;
+}
+
+.btn-cc {
+    top: 43%;
+    left: 29%;
+}
+
+.btn-ht {
+    top: 55%;
+    left: 27%;
+}
+
+.btn-tc {
+    top: 66%;
+    left: 27%;
+}
+
+.btn-ft {
+    top: 77%;
+    left: 30%;
+}
+
+.btn-edu {
+    top: 86%;
+    left: 35%;
+}
+
+.text,
+.text2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    top: 56%;
+    left: 71.5%;
+}
+
+.text2 {
+    top: 56%;
+    left: 73%;
+}
+
+
+i {
+    font-size: 5rem;
+    opacity: 70%;
+    margin-right: 1.5rem;
+    font-weight: bold;
+}
+
+.bold-txt,
+.bold-txt2 {
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: -0.5rem;
+}
+
+.descrp-txt {
+    line-height: 5.5rem;
+    opacity: 70%;
+}
+
+.arrow {
+    color: red;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.btn-lh:hover {
+    color: #007BFF;
+}
+
+.btn-sme:hover {
+    color: #28A745;
+}
+
+.btn-tn:hover {
+    color: #17A2B8;
+}
+
+.btn-cc:hover {
+    color: #ffbf00;
+}
+
+.btn-ht:hover {
+    color: #f80000;
+}
+
+.btn-tc:hover {
+    color: #0774d3;
+}
+
+.btn-ft:hover {
+    color: #0000ef;
+}
+
+.btn-edu:hover {
+    color: #6610F2;
+}
+
+.btn-lh:hover,
+.btn-sme:hover,
+.btn-tn:hover,
+.btn-cc:hover,
+.btn-ht:hover,
+.btn-tc:hover,
+.btn-ft:hover,
+.btn-edu:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+
+
+@media (max-width: 1500px) {
+
+    .bold-txt,
+    .bold-txt2 {
+        font-size: 1.75rem;
+        letter-spacing: 0rem;
+    }
+
+    .descrp-txt {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    .text-overlay {
+        font-size: 0.6rem;
+    }
+
+    .text {
+        font-size: 0.2rem;
+        top: 55%;
+        left: 71.5%;
+    }
+
+    i {
+        font-size: 1rem;
+        opacity: 70%;
+        margin-right: .2rem;
+        font-weight: bold;
+    }
+    .corpus-img {
+        margin-left: 2rem;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .bold-txt,
+    .bold-txt2 {
+        font-size: 0.6rem;
+
+    }
+
+    .descrp-txt {
+        font-size: 0.6rem;
+        line-height: 0.5rem;
+    }
+}
