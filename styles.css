@@ -11,7 +11,7 @@
 
 .container img {
     width: 100%;
-    display: flex;
+    display: block;
 }
 
 .text-overlay {
@@ -19,7 +19,7 @@
     font-family: sans-serif;
     opacity: 70%;
     font-weight: 200;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     z-index: 100;
 }
 
@@ -112,13 +112,13 @@ i {
 
 .bold-txt,
 .bold-txt2 {
-    font-size: 2rem;
+    font-size: 6rem;
     font-weight: bold;
     letter-spacing: -0.5rem;
 }
 
 .descrp-txt {
-    line-height: 1.5rem;
+    line-height: 5.5rem;
     opacity: 70%;
 }
 
@@ -173,7 +173,7 @@ i {
 }
 
 
-@media (max-width: 1900px) {
+@media (max-width: 1200px) {
 
     .bold-txt,
     .bold-txt2 {
