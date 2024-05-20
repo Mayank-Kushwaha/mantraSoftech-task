@@ -19,7 +19,7 @@
     font-family: sans-serif;
     opacity: 70%;
     font-weight: 200;
-    font-size: 3.5rem;
+    font-size: 1.5rem;
     z-index: 100;
 }
 
@@ -112,13 +112,13 @@ i {
 
 .bold-txt,
 .bold-txt2 {
-    font-size: 6rem;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: -0.5rem;
 }
 
 .descrp-txt {
-    line-height: 5.5rem;
+    line-height: 1.5rem;
     opacity: 70%;
 }
 
