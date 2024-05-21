@@ -77,7 +77,7 @@
 /* Icon styling */
 i {
     font-size: 5rem;
-    opacity: 0.7; /* Use 0.7 instead of 70% for opacity */
+    opacity: 0.7; 
     margin-right: 1.5rem;
     font-weight: bold;
 }
@@ -93,7 +93,7 @@ i {
 /* Description text styling */
 .descrp-txt {
     line-height: 5.5rem;
-    opacity: 0.7; /* Use 0.7 instead of 70% for opacity */
+    opacity: 0.7;
 }
 
 /* Arrow styling */
@@ -145,7 +145,7 @@ i {
 
     .text {
         font-size: 1rem;
-        top: 55%;
+        top: 58%;
         left: 71.5%;
     }
 
