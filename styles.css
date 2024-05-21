@@ -2,7 +2,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure consistent box-sizing */
+    box-sizing: border-box;
+    /* Ensure consistent box-sizing */
     overflow-x: hidden;
 }
 
@@ -55,14 +56,45 @@
 }
 
 /* Individual button positions */
-.btn-lh { top: 10%; left: 50%; }
-.btn-sme { top: 21%; left: 38%; }
-.btn-tn { top: 32%; left: 32%; }
-.btn-cc { top: 43%; left: 29%; }
-.btn-ht { top: 55%; left: 27%; }
-.btn-tc { top: 66%; left: 27%; }
-.btn-ft { top: 77%; left: 30%; }
-.btn-edu { top: 86%; left: 35%; }
+.btn-lh {
+    top: 10%;
+    left: 50%;
+}
+
+.btn-sme {
+    top: 21%;
+    left: 38%;
+}
+
+.btn-tn {
+    top: 32%;
+    left: 32%;
+}
+
+.btn-cc {
+    top: 43%;
+    left: 29%;
+}
+
+.btn-ht {
+    top: 55%;
+    left: 27%;
+}
+
+.btn-tc {
+    top: 66%;
+    left: 27%;
+}
+
+.btn-ft {
+    top: 77%;
+    left: 30%;
+}
+
+.btn-edu {
+    top: 86%;
+    left: 35%;
+}
 
 /* Text positioning */
 .text,
@@ -73,13 +105,20 @@
     transform: translate(-50%, -50%);
 }
 
-.text { top: 56%; left: 71.5%; }
-.text2 { top: 56%; left: 74%; }
+.text {
+    top: 56%;
+    left: 71.5%;
+}
+
+.text2 {
+    top: 56%;
+    left: 74%;
+}
 
 /* Icon styling */
 i {
     font-size: 1rem;
-    opacity: 0.7; 
+    opacity: 0.7;
     margin-right: 1.5rem;
     font-weight: bold;
 }
@@ -109,14 +148,37 @@ i {
 }
 
 /* Button hover effects */
-.btn-lh:hover { color: #007BFF; }
-.btn-sme:hover { color: #28A745; }
-.btn-tn:hover { color: #17A2B8; }
-.btn-cc:hover { color: #ffbf00; }
-.btn-ht:hover { color: #f80000; }
-.btn-tc:hover { color: #0774d3; }
-.btn-ft:hover { color: #0000ef; }
-.btn-edu:hover { color: #6610F2; }
+.btn-lh:hover {
+    color: #007BFF;
+}
+
+.btn-sme:hover {
+    color: #28A745;
+}
+
+.btn-tn:hover {
+    color: #17A2B8;
+}
+
+.btn-cc:hover {
+    color: #ffbf00;
+}
+
+.btn-ht:hover {
+    color: #f80000;
+}
+
+.btn-tc:hover {
+    color: #0774d3;
+}
+
+.btn-ft:hover {
+    color: #0000ef;
+}
+
+.btn-edu:hover {
+    color: #6610F2;
+}
 
 /* Common hover effect for buttons */
 .btn-lh:hover,
@@ -132,6 +194,7 @@ i {
 
 /* Media queries for responsive design */
 @media (max-width: 1200px) {
+
     .bold-txt,
     .bold-txt2 {
         font-size: 1.75rem;
@@ -144,23 +207,28 @@ i {
     }
 
     .text {
-    
-        top: 58%;
+        top: 67%;
+        left: 71.5%;
+    }
+    .text2 {
+        top: 67%;
         left: 71.5%;
     }
 
     i {
         font-size: 1rem;
-        opacity: 0.7; 
+        opacity: 0.7;
         margin-right: 0.2rem;
         font-weight: bold;
     }
+
     .corpus-img {
         margin-left: 2rem;
     }
 }
 
 @media (max-width: 800px) {
+
     .bold-txt,
     .bold-txt2 {
         font-size: 0.6rem;
@@ -169,5 +237,19 @@ i {
     .descrp-txt {
         font-size: 0.6rem;
         line-height: 0.5rem;
+    }
+    i {
+        font-size: 0.7rem;
+        opacity: 0.7;
+        margin-right: 0.2rem;
+        font-weight: bold;
+    }
+    .text-overlay {
+        color: black;
+        font-family: sans-serif;
+        opacity: 0.7;
+        font-weight: 200;
+        font-size: 0.7rem;
+        z-index: 100;
     }
 }
