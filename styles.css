@@ -1,38 +1,46 @@
+/* Normalize CSS */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Ensure consistent box-sizing */
     overflow-x: hidden;
 }
 
+/* Container styling */
 .container {
     position: relative;
     width: 100%;
 }
 
+/* Image styling */
 .container img {
     width: 100%;
     display: block;
 }
 
+/* Text overlay styling */
 .text-overlay {
     color: black;
     font-family: sans-serif;
-    opacity: 70%;
+    opacity: 0.7; /* Use 0.7 instead of 70% for opacity */
     font-weight: 200;
     font-size: 3.5rem;
     z-index: 100;
 }
 
+/* Text overlay paragraph styling */
 .text-overlay p {
     position: absolute;
     cursor: pointer;
     transition: color 0.3s, background-color 0.3s, transform 0.3s;
 }
 
+/* Image margin */
 .corpus-img {
     margin-left: 14rem;
 }
 
+/* Button styling with transition */
 .btn-lh,
 .btn-sme,
 .btn-tn,
@@ -46,70 +54,35 @@
     transition: color 0.3s, transform 0.3s;
 }
 
-.btn-lh {
-    top: 10%;
-    left: 50%;
-}
+/* Individual button positions */
+.btn-lh { top: 10%; left: 50%; }
+.btn-sme { top: 21%; left: 38%; }
+.btn-tn { top: 32%; left: 32%; }
+.btn-cc { top: 43%; left: 29%; }
+.btn-ht { top: 55%; left: 27%; }
+.btn-tc { top: 66%; left: 27%; }
+.btn-ft { top: 77%; left: 30%; }
+.btn-edu { top: 86%; left: 35%; }
 
-.btn-sme {
-    top: 21%;
-    left: 38%;
-}
-
-.btn-tn {
-    top: 32%;
-    left: 32%;
-}
-
-.btn-cc {
-    top: 43%;
-    left: 29%;
-}
-
-.btn-ht {
-    top: 55%;
-    left: 27%;
-}
-
-.btn-tc {
-    top: 66%;
-    left: 27%;
-}
-
-.btn-ft {
-    top: 77%;
-    left: 30%;
-}
-
-.btn-edu {
-    top: 86%;
-    left: 35%;
-}
-
+/* Text positioning */
 .text,
 .text2 {
     position: absolute;
     transform: translate(-50%, -50%);
 }
 
-.text {
-    top: 56%;
-    left: 71.5%;
-}
+.text { top: 56%; left: 71.5%; }
+.text2 { top: 56%; left: 73%; }
 
-.text2 {
-    top: 56%;
-    left: 73%;
-}
-
-
+/* Icon styling */
 i {
     font-size: 5rem;
-    opacity: 70%;
+    opacity: 0.7; /* Use 0.7 instead of 70% for opacity */
     margin-right: 1.5rem;
     font-weight: bold;
 }
 
+/* Bold text styling */
 .bold-txt,
 .bold-txt2 {
     font-size: 6rem;
@@ -117,11 +90,13 @@ i {
     letter-spacing: -0.5rem;
 }
 
+/* Description text styling */
 .descrp-txt {
     line-height: 5.5rem;
-    opacity: 70%;
+    opacity: 0.7; /* Use 0.7 instead of 70% for opacity */
 }
 
+/* Arrow styling */
 .arrow {
     color: red;
     display: flex;
@@ -129,38 +104,17 @@ i {
     gap: 3rem;
 }
 
-.btn-lh:hover {
-    color: #007BFF;
-}
+/* Button hover effects */
+.btn-lh:hover { color: #007BFF; }
+.btn-sme:hover { color: #28A745; }
+.btn-tn:hover { color: #17A2B8; }
+.btn-cc:hover { color: #ffbf00; }
+.btn-ht:hover { color: #f80000; }
+.btn-tc:hover { color: #0774d3; }
+.btn-ft:hover { color: #0000ef; }
+.btn-edu:hover { color: #6610F2; }
 
-.btn-sme:hover {
-    color: #28A745;
-}
-
-.btn-tn:hover {
-    color: #17A2B8;
-}
-
-.btn-cc:hover {
-    color: #ffbf00;
-}
-
-.btn-ht:hover {
-    color: #f80000;
-}
-
-.btn-tc:hover {
-    color: #0774d3;
-}
-
-.btn-ft:hover {
-    color: #0000ef;
-}
-
-.btn-edu:hover {
-    color: #6610F2;
-}
-
+/* Common hover effect for buttons */
 .btn-lh:hover,
 .btn-sme:hover,
 .btn-tn:hover,
@@ -172,13 +126,12 @@ i {
     transform: translateX(-50%) scale(1.2);
 }
 
-
+/* Media queries for responsive design */
 @media (max-width: 1500px) {
-
     .bold-txt,
     .bold-txt2 {
         font-size: 1.75rem;
-        letter-spacing: 0rem;
+        letter-spacing: 0;
     }
 
     .descrp-txt {
@@ -198,21 +151,19 @@ i {
 
     i {
         font-size: 1rem;
-        opacity: 70%;
-        margin-right: .2rem;
+        opacity: 0.7; 
+        margin-right: 0.2rem;
         font-weight: bold;
     }
     .corpus-img {
         margin-left: 2rem;
     }
-    
 }
 
 @media (max-width: 800px) {
     .bold-txt,
     .bold-txt2 {
         font-size: 0.6rem;
-
     }
 
     .descrp-txt {
