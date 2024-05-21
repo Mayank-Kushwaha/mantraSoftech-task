@@ -22,9 +22,9 @@
 .text-overlay {
     color: black;
     font-family: sans-serif;
-    opacity: 0.7; /* Use 0.7 instead of 70% for opacity */
+    opacity: 0.7;
     font-weight: 200;
-    font-size: 3.5rem;
+    font-size: 1rem;
     z-index: 100;
 }
 
@@ -37,7 +37,7 @@
 
 /* Image margin */
 .corpus-img {
-    margin-left: 14rem;
+    margin-left: 4rem;
 }
 
 /* Button styling with transition */
@@ -67,16 +67,18 @@
 /* Text positioning */
 .text,
 .text2 {
+    font-family: sans-serif;
+    opacity: 0.7;
     position: absolute;
     transform: translate(-50%, -50%);
 }
 
 .text { top: 56%; left: 71.5%; }
-.text2 { top: 56%; left: 73%; }
+.text2 { top: 56%; left: 74%; }
 
 /* Icon styling */
 i {
-    font-size: 5rem;
+    font-size: 1rem;
     opacity: 0.7; 
     margin-right: 1.5rem;
     font-weight: bold;
@@ -85,14 +87,16 @@ i {
 /* Bold text styling */
 .bold-txt,
 .bold-txt2 {
-    font-size: 6rem;
+    font-family: sans-serif;
+    opacity: 0.7;
+    font-size: 1.5rem;
     font-weight: bold;
-    letter-spacing: -0.5rem;
+    letter-spacing: -0.1rem;
 }
 
 /* Description text styling */
 .descrp-txt {
-    line-height: 5.5rem;
+    line-height: 1.5rem;
     opacity: 0.7;
 }
 
@@ -127,7 +131,7 @@ i {
 }
 
 /* Media queries for responsive design */
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
     .bold-txt,
     .bold-txt2 {
         font-size: 1.75rem;
@@ -139,12 +143,8 @@ i {
         line-height: 1.5rem;
     }
 
-    .text-overlay {
-        font-size: 1rem;
-    }
-
     .text {
-        font-size: 1rem;
+    
         top: 58%;
         left: 71.5%;
     }
