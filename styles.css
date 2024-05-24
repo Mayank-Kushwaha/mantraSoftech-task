@@ -3,45 +3,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Ensure consistent box-sizing */
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-/* Container styling */
+/* Container style */
 .container {
     position: relative;
     width: 100%;
 }
 
-/* Image styling */
+/* Image style */
 .container img {
     width: 100%;
     display: block;
+    z-index: -1;
 }
 
-/* Text overlay styling */
+/* Text overlay style */
 .text-overlay {
     color: black;
     font-family: sans-serif;
     opacity: 0.7;
     font-weight: 200;
-    font-size: 1rem;
     z-index: 100;
 }
 
-/* Text overlay paragraph styling */
+/* overlay paragraph style */
 .text-overlay p {
+    font-size: 1rem;
     position: absolute;
     cursor: pointer;
     transition: color 0.3s, background-color 0.3s, transform 0.3s;
 }
-
-/* Image margin */
-.corpus-img {
-    margin-left: 4rem;
+.text-overlay p.hover{
+    transform: translateX(-50%) scale(1.2);
+    color: #ff0000;
 }
 
-/* Button styling with transition */
+/* Button transition */
 .btn-lh,
 .btn-sme,
 .btn-tn,
@@ -97,25 +96,20 @@
 }
 
 /* Text positioning */
-.text,
-.text2 {
+.text {
     font-family: sans-serif;
     opacity: 0.7;
     position: absolute;
-    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 57.5%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
 }
 
-.text {
-    top: 56%;
-    left: 71.5%;
-}
 
-.text2 {
-    top: 56%;
-    left: 74%;
-}
-
-/* Icon styling */
+/* Icon style */
 i {
     font-size: 1rem;
     opacity: 0.7;
@@ -123,9 +117,8 @@ i {
     font-weight: bold;
 }
 
-/* Bold text styling */
-.bold-txt,
-.bold-txt2 {
+/* Bold text style */
+.bold-txt {
     font-family: sans-serif;
     opacity: 0.7;
     font-size: 1.5rem;
@@ -133,70 +126,95 @@ i {
     letter-spacing: -0.1rem;
 }
 
-/* Description text styling */
+/* Description text style */
 .descrp-txt {
     line-height: 1.5rem;
     opacity: 0.7;
+    max-width: 70%;
 }
 
-/* Arrow styling */
+/* Arrow style */
 .arrow {
     color: red;
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
 }
 
-/* Button hover effects */
-.btn-lh:hover {
-    color: #007BFF;
+
+/* Logo style */
+.logo {
+    position: absolute;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-.btn-sme:hover {
-    color: #28A745;
+.logo-Blue {
+    top: 17%;
+    left: 57%;
+    background-color: black;
+    color: white;
 }
 
-.btn-tn:hover {
-    color: #17A2B8;
+.logo-PVR {
+    top: 22%;
+    left: 51%;
+    background-color: red;
+    color: black;
 }
 
-.btn-cc:hover {
-    color: #ffbf00;
+.logo-TCS {
+    top: 31%;
+    left: 46%;
+    background-color: black;
+    color: white;
 }
 
-.btn-ht:hover {
-    color: #f80000;
+.logo-Coinbase {
+    top: 40%;
+    left: 41%;
+    background-color: red;
+    color: black;
 }
 
-.btn-tc:hover {
-    color: #0774d3;
+.logo-NetMeds {
+    top: 52%;
+    left: 38%;
+    background-color: black;
+    color: white;
 }
 
-.btn-ft:hover {
-    color: #0000ef;
+.logo-Jio {
+    top: 62%;
+    left: 36%;
+    background-color: red;
+    color: black;
 }
 
-.btn-edu:hover {
-    color: #6610F2;
+.logo-Paytm {
+    top: 73%;
+    left: 37%;
+    background-color: black;
+    color: white;
 }
 
-/* Common hover effect for buttons */
-.btn-lh:hover,
-.btn-sme:hover,
-.btn-tn:hover,
-.btn-cc:hover,
-.btn-ht:hover,
-.btn-tc:hover,
-.btn-ft:hover,
-.btn-edu:hover {
-    transform: translateX(-50%) scale(1.2);
+.logo-Unacademy {
+    top: 79%;
+    left: 43%;
+    background-color: red;
+    color: black;
 }
 
 /* Media queries for responsive design */
 @media (max-width: 1200px) {
 
-    .bold-txt,
-    .bold-txt2 {
+    .bold-txt {
         font-size: 1.75rem;
         letter-spacing: 0;
     }
@@ -206,15 +224,6 @@ i {
         line-height: 1.5rem;
     }
 
-    .text {
-        top: 67%;
-        left: 71.5%;
-    }
-    .text2 {
-        top: 67%;
-        left: 71.5%;
-    }
-
     i {
         font-size: 1rem;
         opacity: 0.7;
@@ -222,34 +231,48 @@ i {
         font-weight: bold;
     }
 
-    .corpus-img {
-        margin-left: 2rem;
-    }
 }
 
 @media (max-width: 800px) {
 
-    .bold-txt,
-    .bold-txt2 {
+    .bold-txt{
         font-size: 0.6rem;
     }
 
     .descrp-txt {
-        font-size: 0.6rem;
-        line-height: 0.5rem;
+        display: none;
+    }
+    .arrow {
+        color: red;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 0.5rem;
     }
     i {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         opacity: 0.7;
         margin-right: 0.2rem;
         font-weight: bold;
     }
-    .text-overlay {
+
+    .text-overlay p {
         color: black;
         font-family: sans-serif;
         opacity: 0.7;
         font-weight: 200;
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         z-index: 100;
+    }
+    .logo {
+        position: absolute;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.7rem;
+        font-weight: bold;
     }
 }
